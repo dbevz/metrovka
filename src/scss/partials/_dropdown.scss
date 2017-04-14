@@ -1,0 +1,52 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+
+  
+  background-image: url("../img/triangle-icon.png");
+  background-repeat: no-repeat;
+  border: solid 2px #DFE3E6;
+  background-position: right 15px top 24px;
+
+  .dropdown__option {
+    display: none;
+    padding: 16px;
+    order: 2;
+  }
+
+  .dropdown__option:hover {
+    background-color: #30AE63;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .dropdown__option_active {
+    display: block;
+    order: 1;
+  }
+
+  .dropdown__option_active:hover {
+    background-color: transparent;
+    color: #000;
+  }
+}
+
+.dropdown_open {
+  border-color: #30AE63;
+
+  .dropdown__option_active {
+    border-bottom: solid 2px #DFE3E6;
+  }
+
+  .dropdown__option {
+    display: block;
+  }
+}
+
+.dropdown_disabled {
+  cursor: default;
+  opacity: 0.5;
+  .dropdown__option:hover {
+    background-color: none;
+  }
+}
