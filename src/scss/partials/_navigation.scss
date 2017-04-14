@@ -1,0 +1,33 @@
+.navigation {
+
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__logo {
+  margin-right: 36px;
+}
+
+.navigation__link {
+  margin-right: 40px;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 5px;
+}
+
+.navigation__link_active {
+  border-bottom: solid 2px #fff; 
+}
+
+@media all and (max-width: 545px) {
+  .navigation__link {
+    display: none;
+  }
+
+  .navigation__link_active {
+    display:block;
+  }
+}

@@ -1,0 +1,37 @@
+.header {
+  background-color: #30AE63;
+  padding: 18px 0 30px 0;
+}
+
+.header__container {
+  width: 94%;
+  max-width: 890px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger-menu {
+    display: none;
+  }
+
+@media all and (max-width: 785px) {
+  .button-group {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+    padding-top: 6px;
+
+    &__line {
+      display: block;
+      background-color: #FFF;
+      height: 1.5px;
+      width: 24px;
+      margin-bottom: 3px;
+      border-radius: 1.5px;
+    }
+  }
+}
+

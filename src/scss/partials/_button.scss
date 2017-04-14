@@ -6,6 +6,9 @@
 
 .button_primary {
   background-color: #30AE63;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.875rem;
 }
 
 .button_primary:hover {
@@ -32,4 +35,19 @@
 
 .button_small {
   padding: 10px 15px;
+}
+
+.button-with-icon {
+  padding-left: 45px;
+  background-image: url("../img/button-icon.png");
+  background-repeat: no-repeat;
+  background-position: 16px 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.button-with-icon:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
