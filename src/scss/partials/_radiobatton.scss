@@ -1,0 +1,27 @@
+.radio{
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 0 3px 0 0;
+  opacity: 0;
+  &:not(checked) + label{
+    height: 8px;
+  }
+  &:not(checked) + label:before{
+    content: '';
+    background: url(../../img/radio.png) 19px top no-repeat;
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+    cursor: pointer;
+  }
+  &:checked + label{
+    background: url(../../img/radio.png);
+    padding: 0 0 0 7px;
+  }
+}
+
+
+
+
+

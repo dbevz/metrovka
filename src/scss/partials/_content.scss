@@ -1,0 +1,165 @@
+.content{
+  &__title{
+    width: 320px;
+    height: 47px;
+
+    h2{
+      color: #2C74C7;
+      font-family: Roboto;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 16px;
+    }
+
+    &__adress{
+      margin-top: 15px;
+      width: 210px;
+      height: 15px;
+      font-family: Roboto;
+      font-weight: 300;
+      font-size: 12px;
+      &-duration{
+        color: #9B9B9B;
+        margin-left: 20px;
+      }
+    }
+  }
+  &__description{
+    margin-top: 20px;
+    width: 320px;
+    height: 129px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 12px;
+
+    &-title{
+      color: #B1B1B1;
+      margin-bottom: 10px;
+    }
+    &-metric{
+      font-size: 13px;
+      color: #4A4A4A;
+      margin-bottom: 10px;
+    }
+    &-desc{
+      line-height: 20px;
+      overflow: hidden;
+    }
+  }
+}
+
+.green{
+  margin-right: 5px;
+  font-size: 10px;
+  color: #30AD64;
+}
+.blue{
+
+  margin-right: 5px;
+  font-size: 10px;
+  color: #4A90E2;
+}
+
+.price{
+
+  font-family: Roboto;
+  font-weight: 300;
+
+  &-course{
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 80px;
+    height: 26px;
+    &-text{
+      padding-top: 5px;
+    }
+    &-btn{
+      padding-top: 5px;
+      cursor: pointer;
+      border-bottom: 2px solid #9B9B9B;
+      &:hover{
+        border-bottom: 0px;
+      }
+    }
+  }
+  &-button{
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 148px;
+    height: 36px;
+    background: rgba(140, 140, 140, .6);
+    border-radius: 5px;
+    padding: 10px 0px 10px 18px;
+    &-info{
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      background: #D8D8D8;
+      color: #fff;
+      font-size: 9px;
+      padding: 5px 5px 5px 8px;
+      margin-left: 9px;
+      margin-top: -2px;
+      cursor: pointer;
+      &:hover{
+        background: #c6c6c6;
+      }
+
+    }
+  }
+  &-bad{
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 500;
+    background: #FFEFEA;
+    color: rgba(#D00202, .5041);
+  }
+  &-good{
+    padding-top: 12px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    background: #EAFFF5;
+    color: #30AD64;
+  }
+
+  h2{
+    color: #4A4A4A;
+    font-size: 18px;
+    text-align: right;
+  }
+  &-text{
+    font-size: 14px;
+    color: #9B9B9B;
+  }
+}
+
+.communicate-btn{
+  width: 148px;
+  height: 32px;
+  margin-top: 12px;
+
+  &-elem{
+    cursor: pointer;
+    width: 70px;
+    height: 32px;
+    border: 2px solid rgba(#2573D8, 0.4);
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 5px;
+    &:hover{
+      background: #eeeeee;
+    }
+  }
+
+  .phone{
+
+    color: #30AD64;
+    font-size: 14pt;
+  }
+  .message{
+    color: #0084FF;
+  }
+
+}

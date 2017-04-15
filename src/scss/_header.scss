@@ -1,0 +1,110 @@
+.header{
+  margin: 0 auto;
+  width: 1280px;
+  height: 60px;
+  background: $nav_color;
+  position: relative;
+
+  &__link{
+    color: white;
+  }
+
+  &__navigation{
+    position: absolute;
+    width: 891px;
+    height: 40px;
+    top: 10px;
+    left: 20px;
+
+    &__logo{
+
+    }
+    &__item{
+      display: block;
+      width: 60px;
+      color: white;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: normal;
+      cursor: pointer;
+      padding-top: 10px;
+
+      &_bigger{
+        width: 75px;
+      }
+
+      &:hover{
+        border-bottom: 3px solid white;
+        font-weight: 500;
+      }
+
+    }
+
+    &__links{
+      position: relative;
+      left: 96px;
+      width: 378px;
+    }
+
+    &__buttons{
+      position: relative;
+      width: 298px;
+      left: 173px;
+      cursor: pointer;
+
+      &__text{
+        font-family: Roboto;
+        font-weight: 500;
+        font-style: normal;
+        color: white;
+        padding-left: 10px;
+        padding-top: 12px;
+      }
+
+      &__publish{
+        background: #4dc171;
+        width: 236px;
+
+        &:hover{
+          background: #50DB88;
+        }
+      }
+
+      &__enter{
+          width: 62px;
+        &:hover{
+          background: #4dc171;
+        }
+      }
+    }
+  }
+
+
+}
+
+.icon{
+  font-size: 0.5em;
+}
+
+
+@media all and (max-width: 890px){
+  .header{
+    width: 1129px;
+  }
+}
+
+@media all and (max-width: 360px){
+  .header{
+    width: 360px;
+    &__navigation{
+      &__links{
+        display: none;
+      }
+      &__buttons{
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,162 @@
+.mobile{
+  display: none;
+}
+.main-section{
+  margin: 0 auto;
+  max-width: 1280px;
+  height: 930px;
+  background: $bg_color;
+  position: relative;
+
+  &__text{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    &_title{
+      @extend .main-section__text;
+      color: #152935;
+      font-size: 20px;
+    }
+  }
+
+  &__head{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 890px;
+    height: 100px;
+
+    &__path{
+      color: #2573D8;
+      height: 17px;
+      &__link{
+        color: #2573D8;
+        &:hover{
+          border-bottom: 1px solid #2573D8;
+        }
+      }
+
+    }
+    &__element{
+
+    }
+    &__title{
+      padding-top: 5px;
+      height: 32px;
+      font-size: 20px;
+    }
+    &__sort{
+      width: 862px;
+      margin-top: 33px;
+      height: 18px;
+      &__coincidence{
+        width: 250px;
+        display: block;
+        color: #b0c0ca;
+      }
+      &__lists{
+        display: block;
+        width: 222px;
+        &-sort{
+          width: 115px;
+        }
+        &-currency{
+          width: 75px;
+        }
+      }
+    }
+  }
+
+  &__map{
+    position: absolute;
+    width: 333px;
+    height: 594px;
+    top: 100px;
+    left: 910px;
+    cursor: pointer;
+    background: url("../img/map.png") left top no-repeat;
+  }
+
+  &__content{
+    width: 890px;
+    height: 798px;
+
+    &__element{
+      height: 258px;
+      background: #fff;
+      margin-bottom: 12px;
+      padding: 15px 20px;
+
+      &-information{
+        width: 582px;
+        height: 196px;
+
+        &-img{
+          display: block;
+          width: 242px;
+          height: 169.65px;
+        }
+
+        &-description{
+          width: 320px;
+          height: 196px;
+        }
+      }
+
+      &-price{
+        width: 148px;
+        height: 160px;
+      }
+
+      &-select{
+        width: 22px;
+        margin: 0 auto;
+      }
+
+      &-next{
+        width: 112px;
+        height: 39px;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 12px;
+        color: #979797;
+        line-height: 20px;
+        cursor: pointer;
+        padding: 2px;
+        &-arrow{
+          margin-left: 16px;
+        }
+        &-text{
+          color: rgba(#000, 0.6);
+        }
+        &:hover{
+          border-radius: 2px;
+          background: #eeeeee;
+        }
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 890px){
+  .main-section{
+    width: 1129px;
+    &__content{
+      margin: 0 auto;
+    }
+    &__map{
+      display: none;
+    }
+    .mobile{
+      display: none;
+    }
+  }
+}
+
+@media all and (max-width: 360px){
+  .mobile{
+    display: block;
+  }
+}
