@@ -1,0 +1,71 @@
+.best-offers {
+  background-color: #FFF;
+  padding: 45px 25px 0 25px;
+  margin: 20px 0;
+  position: relative;
+
+  &__room-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media all and (max-width: 730px) {
+      justif-content: space-around;
+
+      .best-offers__room-card {
+        width: 202px;
+        margin: 20px;
+      }
+    }
+
+    @media all and (max-width: 596px) {
+      justify-content: center;
+    }
+  }
+
+  &__room-card {
+    width: 202px;
+  }
+
+  &__room-card-img {
+    margin-bottom: 25px;
+  }
+
+  &__room-card-price {
+    margin-bottom: 12px;
+  }
+
+  &__room-card-details {
+    display: block;
+    margin-bottom: 20px;
+    color: #DFE3E6;
+    font-size: 0.75rem;
+  }
+
+  &__room-card-map-point {
+    display: block;
+    color: #152935;
+    background-image: url("../img/red-circle.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 21px;
+    font-size: 0.75rem;
+  }
+
+  &__button-more {
+    display: block;
+    text-align: center;
+    margin: 0 -25px;
+    margin-top: 42px;
+    padding: 10px;
+    border: solid 2px #DFE3E6;
+    border-right: none;
+    border-left: none;
+    color: #152935;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #DFE3E6;
+    }
+  }
+}
