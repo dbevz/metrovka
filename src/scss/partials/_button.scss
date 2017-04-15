@@ -2,6 +2,7 @@
   display: block;
   font-size: 0.875rem;
   padding: 14px 20px 12px 20px;
+  text-align: center;
 }
 
 .button_primary {
@@ -13,16 +14,21 @@
 
 .button_primary:hover {
   background-color: #50DB88;
+  cursor: pointer;
 }
 
 .button_secondary {
   border: solid 2px #30AE63;
-  background-color: transparent;
+  background-color: #fff;
+  color: #30AE63;
 }
 
 .button_secondary:hover {
   border: none;
   background-color: #30AE63;
+  border: solid 2px #30AE63;
+  color: #fff;
+  cursor: pointer;
 }
 
 .button_primary[disabled] {

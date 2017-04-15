@@ -18,6 +18,13 @@
   padding: 8px 5px;
 }
 
+.navigation__link-more {
+  padding-left: 28px;
+  background-image: url("../img/more-icon.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
 .navigation__link_active {
   border-bottom: solid 2px #fff; 
 }

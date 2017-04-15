@@ -1,17 +1,30 @@
 .dropdown {
   display: flex;
-  flex-direction: column;
-
   
-  background-image: url("../img/triangle-icon.png");
-  background-repeat: no-repeat;
+  position: relative;
+  min-height: 52px;
+  z-index: 1;
   border: solid 2px #DFE3E6;
-  background-position: right 15px top 24px;
+  border-radius: 3px;
+  .dropdown__list {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    background-color: #FFF;
+    flex-direction: column;
+    border: none;
+    border-radius: 3px;
+    z-index: 2;
+  }
+
+
 
   .dropdown__option {
     display: none;
     padding: 16px;
     order: 2;
+    position: relative;
+
   }
 
   .dropdown__option:hover {
@@ -23,6 +36,9 @@
   .dropdown__option_active {
     display: block;
     order: 1;
+    background-image: url("../img/triangle-icon.png");
+    background-repeat: no-repeat;
+    background-position: right 15px top 24px;
   }
 
   .dropdown__option_active:hover {
@@ -32,15 +48,27 @@
 }
 
 .dropdown_open {
-  border-color: #30AE63;
+  border: none;
+  
+  .dropdown__list {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    background-color: #FFF;
+    flex-direction: column;
+    border: solid 2px #30AE63;
+  }
+
+
+
+  .dropdown__option {
+    display: block;
+  }
 
   .dropdown__option_active {
     border-bottom: solid 2px #DFE3E6;
   }
 
-  .dropdown__option {
-    display: block;
-  }
 }
 
 .dropdown_disabled {
@@ -50,3 +78,5 @@
     background-color: none;
   }
 }
+
+

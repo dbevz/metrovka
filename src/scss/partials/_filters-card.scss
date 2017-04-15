@@ -1,0 +1,76 @@
+.filters-card {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: #fff;
+
+
+  &__header {
+    margin-bottom: 17px;
+    font-size: 1.5rem;
+  }
+
+
+  &__form {
+    width: 320px;
+  }
+
+  &__search-type {
+    margin-bottom: 18px;
+    display: flex;
+
+    &-link {
+      display: block;
+      color: #000;
+      text-decoration: none;
+      margin-right: 35px;
+      padding: 10px 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &_active {
+        border-bottom: solid 2px #30AE63;
+      }
+
+      &:hover {
+        color: #30AE63;
+      }
+    }
+  }
+
+  &__select-form {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+
+  }
+
+
+
+  &__image {
+    width: 411px;
+    height: 212px;
+  }
+
+
+
+
+  @media all and (max-width: 900px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+
+
+    &__image {
+    width: 411px;
+    height: 212px;
+    margin-bottom: 30px;
+  }
+  }
+}
+
