@@ -1,8 +1,12 @@
-.best-offers {
+.offers {
   background-color: #FFF;
   padding: 45px 25px 0 25px;
   margin: 20px 0;
   position: relative;
+
+  &__nav {
+    justify-content: center;
+  }
 
   &__header {
     font-size: 1.5rem;
@@ -19,7 +23,7 @@
     @media all and (max-width: 730px) {
       justif-content: space-around;
 
-      .best-offers__room-card {
+      .offers__room-card {
         width: 202px;
         margin: 20px;
       }
